@@ -1,0 +1,30 @@
+{% extends 'basic_app/base.html' %}
+
+{% block bodyblock %}
+
+  {% if listofart  %}
+  <table>
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>content</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for kir in listofart %}
+      <tr>
+        <th>{{ kir.name }}</th>
+        <th>{{ kir.content }}</th>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>nothing found it</p>
+  {% endif %}
+
+
+
+  {{ listofart }}
+
+{% endblock %}

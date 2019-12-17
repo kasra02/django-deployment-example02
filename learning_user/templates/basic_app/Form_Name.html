@@ -1,0 +1,9 @@
+{% extends 'basic_app/base.html' %}
+
+{% block bodyblock %}
+  <form method="POST">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="kick me">
+  </form>
+{% endblock %}
