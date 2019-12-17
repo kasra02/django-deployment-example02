@@ -26,7 +26,7 @@ SECRET_KEY = '_wpdxc4y5&c7+!9n2ji&*u)*^d+jc+bq7_lxpiuwp(hu4vwt0%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [kasra02.pythonanywhere.com]
+ALLOWED_HOSTS = ['kasra02.pythonanywhere.com']
 
 
 # Application definition
